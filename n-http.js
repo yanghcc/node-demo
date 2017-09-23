@@ -1,8 +1,8 @@
 /*
 * @Author: hucheng.yang
 * @Date:   2017-03-26 23:05:55
-* @Last Modified by:   yanghcc
-* @Last Modified time: 2017-03-27 00:15:49
+* @Last Modified by:   black
+* @Last Modified time: 2017-03-27 16:09:33
 */
 
 var http = require('http')
@@ -16,17 +16,17 @@ server.on('request',function(request,response){
 	var url = response.url
 	//两个参数：响应码，请求头对象
 
-	if(url = '/css'){
-		response.writeHead(200,{
-			'Content-Type':'text/css'
-		})
-		fs.readFile('./css/hello.css',function(err,data){
-			if (err) {
-				throw err
-			}
-			response.end(data)
-		})
-	}
+	// if(url = '/css'){
+	// 	response.writeHead(200,{
+	// 		'Content-Type':'text/css'
+	// 	})
+	// 	fs.readFile('./css/hello.css',function(err,data){
+	// 		if (err) {
+	// 			throw err
+	// 		}
+	// 		response.end(data)
+	// 	})
+	// }
 	response.writeHead(200,{
 		'Content-Type':'text/html'
 	})
