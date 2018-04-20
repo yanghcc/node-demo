@@ -10,3 +10,5 @@
 - nodemon node项目监听文件改变重启服务
 - nodemailer NodeJS 邮件发送模块，支持定制基于 Mustache 的模板正文。
 - node_redis 是为 NodeJS 而写的 Redis client，它支持所有 Redis 命令。
+- glob 模块，便捷匹配路径下所有文件。etc. ‘src/**/*.html’
+
